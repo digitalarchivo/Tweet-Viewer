@@ -26,10 +26,10 @@ export default function Home() {
       <div>
         <TwitterXSvg styles="w-24 fill-white" />
       </div>
-      <div className="flex flex-col  xl:flex-row min-w-[80%] max-h-[50rem]">
-        <div className="h-full  w-1/2 flex items-start justify-center">
-          <div className="flex flex-col items-start gap-4 w-full">
-            <div className="flex flex-col w-full  items-start  justify-center">
+      <div className="flex flex-col  gap-10 xl:gap-0 xl:flex-row min-h-screen xl:min-w-[80%] xl:max-h-[50rem]">
+        <div className="h-full  xl:w-1/2 flex items-center xl:items-start justify-center">
+          <div className="flex flex-col items-center xl:items-start gap-4 w-full">
+            <div className="flex flex-col w-full  items-center  xl:items-start  justify-center">
               <label
                 htmlFor="website-admin"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -54,7 +54,7 @@ export default function Home() {
               </div>
             </div>
             <button
-              className="bg-white hover:bg-blue-700 text-black font-bold py-2 px-4 rounded"
+              className="bg-white hover:bg-white hover:text-black text-black font-bold py-2 px-4 rounded max-w-[10rem] w-full xl:w-auto"
               //@ts-ignore
               onClick={() => onsubmit(textInput?.current?.value)}
             >
@@ -62,10 +62,10 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="h-full min-h-[60rem]  w-1/2 flex items-start   justify-center">
+        <div className="h-full  min-h-[60rem] w-full  xl:w-1/2 flex  items-start   justify-center">
           {tweetId == "" ? (
             <div className="flex flex-col items-center h-1/4 justify-center">
-              <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
+              <h1 className="text-3xl font-bold text-gray-900 dark:text-white text-center">
                 Welcome to Tweet Viewer
               </h1>
               <p className="text-gray-500 dark:text-gray-400 text-center px-20">
