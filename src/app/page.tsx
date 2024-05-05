@@ -1,6 +1,7 @@
 "use client";
 import { useRef, useState } from "react";
 import { Tweet } from "react-tweet";
+import tweetsData from './GCRClassic.json'; // Import statement for JSON file
 
 export default function Home() {
   // create a ref to store the textInput DOM element
